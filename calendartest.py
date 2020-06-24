@@ -6,9 +6,7 @@ from pandas.tseries.offsets import CustomBusinessDay
 
 class myCalendar(AbstractHolidayCalendar):
    rules = [
-     Holiday("New Years Day", month=1, day=1, observance=nearest_workday),
-     Holiday("Independence Day", month=1, day=4, observance=nearest_workday),
-     Holiday("Independence Day", month=1, day=6, observance=nearest_workday),
+     Holiday("New Years Day", month=1, day=1),
      Holiday("Union Day", month=2, day=12, observance=nearest_workday),
      Holiday("Peasants' Day", month=3, day=2, observance=nearest_workday),
      Holiday("	Full Moon Day of Tabaung", month=3, day=9, observance=nearest_workday),
