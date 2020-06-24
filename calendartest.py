@@ -33,7 +33,7 @@ class myCalendar(AbstractHolidayCalendar):
      Holiday("New Year Holiday", month=12, day=31, observance=nearest_workday),
 
    ]
-# umc-workingday #
+# mm-workingday #
 #using CustomBusinessDay
 cal = CustomBusinessDay(calendar=myCalendar())
 #start to end frequency with calling custombusinessday
@@ -56,7 +56,7 @@ mmdata = {'mm-workingday' : df["mm"].tolist()}
 def mm():
   return mmdata
 
-# umc-holiday #
+# mm-holiday #
 # converting to list 
 mmh=df["mm"].tolist()
 
